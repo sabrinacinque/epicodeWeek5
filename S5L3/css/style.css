@@ -1,0 +1,331 @@
+body{
+    color: #732104;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #FEF7E2;
+    display: flex;
+    justify-content: center;
+    text-align: center; /* Centra tutto il contenuto orizzontalmente */
+    border-radius: 5em;
+}
+
+#bee{
+    width: 3em;
+    padding-right: 2em;
+
+}
+
+a{
+    text-decoration: none;
+    color:#732104;
+}
+
+li{
+    font-weight: bold;
+    background-color: #FFDF7F;
+    margin: 1em;
+    width:8em;
+    padding:1.5em 2em;
+    border-radius: 5em; /* Arrotonda solo i bordi laterali */
+}
+
+#firstLi {
+    display: flex;
+    justify-content: center; /* Centra orizzontalmente i contenuti */
+    align-items: center; /* Centra verticalmente i contenuti */
+    font-size: 2em;
+    width: fit-content;
+    padding:1em 4em;
+}
+
+#firstLi img {
+    vertical-align: middle; /* Allinea l'immagine verticalmente al centro */
+    padding: 0 0.5em 0 0;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+
+
+/******************************MAIN********************/
+main {
+    text-align: center;
+}
+
+
+.cards{
+    background-color: #FEF7E2;
+    width: 90%;
+    margin:0 auto;
+    padding-bottom: 2em;
+    border: 2px solid black;
+    border-radius: 5em 5em 0 0;
+    margin-bottom: 2em;
+}
+
+.barattolo{
+    width:100%;
+    border-radius: 5em 5em 0 0;
+}
+
+figcaption{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: larger;
+}
+
+figcaption div p{
+    margin-top: 0;
+}
+
+figcaption div h3{
+    margin-bottom: 0;
+}
+
+.cards button{
+    background-color: #F3DF85;
+    border: none;
+    padding: 1em 5em;
+    color:#732104;
+    font-weight: bolder;
+    border-radius: 5em;
+
+}
+
+#article{
+    background-color: #FEF7E2;
+    width: 90%;
+    margin:0 auto;
+    border: 2px solid black;
+    padding: 1em 2em 4em 2em;
+
+}
+
+#imgArticle{
+    width:100%;
+    margin-top: 1em;
+    
+}
+
+
+/**************************da 576*******************************/
+
+@media screen and ( min-width : 576px){
+
+
+    ul{
+        flex-direction: row; 
+        justify-content: space-evenly;
+        align-items: center;
+        padding:0;
+    }
+
+
+    li{
+        font-size: 0.7em;
+        padding: 0.2em 0.2em;
+        margin: 0.2em;
+    }
+    
+    #firstLi {
+        display: flex;
+        justify-content: center; /* Centra orizzontalmente i contenuti */
+        align-items: center; /* Centra verticalmente i contenuti */
+        font-size: 1em;
+        width:1em;
+        padding:1em 4em;
+    }
+
+    #firstA{
+        order:3
+    }
+
+    #secondA{
+        order:1
+    }
+    #terzoA{
+        order:2
+    }
+    #quartoA{
+        order:4
+    }
+    #quintoA{
+        order:5
+    }
+
+
+    #article div h2{
+        text-align: left;
+    }
+
+    h1{
+        text-align: left;
+        margin-left: 2em;
+    }
+
+    #quintoDiv{
+        display: none;
+    }
+
+    #firstDiv{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .cards{
+        width:35%;
+    }
+
+    .cards,.barattolo{
+        border-radius: 2em 2em 0 0  
+    }
+
+    .cards button{
+        padding: 0.5em;
+        font-weight: bolder; 
+    }
+
+    figcaption{
+        font-size:0.7em;
+    }
+
+    figcaption div h3{
+        flex-wrap: wrap;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    #article{
+       margin-left:1em;
+    }
+}
+
+/***************************768px***************************/
+
+@media screen and (min-width : 768px){
+    body{
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    header{
+        width:33%;
+        font-size: 0.8em;
+        border-radius: 0%;
+    }
+
+    #quartoDiv,#quintoDiv{
+        display: none;
+    }
+
+    ul{
+        flex-direction: column; 
+    }
+    
+    li{
+        padding:2.3em 2.3em;
+        border-radius: 5em; /* Arrotonda solo i bordi laterali */
+    }
+    
+    #firstLi{
+        font-size:1.5em;
+        width: fit-content;
+        padding:1em 1em;
+    
+    }
+    
+    #firstDiv{
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .cards{
+        width: 30%;
+    }
+
+
+    .cards,.barattolo{
+        border-radius: 2em 2em 0 0  
+    }
+
+    .cards button{
+        padding: 0.5em;
+        font-weight: bolder; 
+    }
+
+    figcaption{
+        font-size:0.7em;
+    }
+
+    figcaption div h3{
+        flex-wrap: wrap;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    #article{
+        width:80%;
+    }
+
+    h1{
+        margin-left: 0.5em;
+    }
+  
+
+   
+}
+
+/***************************992px***************************/
+
+@media screen and (min-width : 992px){
+    #quartoDiv{
+        display: block;
+    }
+
+    .cards{
+        width: 22%;
+    }
+}
+
+/***************************1200px***************************/
+
+@media screen and (min-width : 1200px){
+    #quintoDiv{
+        display: block;
+    }
+
+
+
+    .cards{
+        width: 15%;
+    }
+
+
+    #article {
+        display: flex;
+        align-items: flex-start; /* Allinea gli elementi verticalmente */
+    }
+
+    #article img {
+        width:70%;
+        order: -1; /* Sposta l'immagine a sinistra */
+        margin-right: 1em; /* Aggiunge uno spazio tra l'immagine e il testo */
+    }
+
+    #article p {
+        flex: 1; /* Fa espandere il paragrafo per riempire lo spazio disponibile */
+    }
+}
+
+
+
